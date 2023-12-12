@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react"
-// import Carousel from "./Carousel";
-import style from '../assets/Album.module.css'
+import Carousel from "./Carousel";
+import style from "../assets/Album.module.css";
+import AddNewAlbum from "./AddNewAlbum";
 
 
 export default function Album() {
@@ -38,9 +39,9 @@ export default function Album() {
             <main className={style.albumMain}>
                 <section className={style.albumSection}>
                     {
-                        // album.map((album) => {
-                        //     return (<Carousel album={album} key={album[0].userId} />)
-                        // })
+                        album.map((album) => {
+                            return (<Carousel album={album} key={album[0].userId} />)
+                        })
                     }
                     {
                         addNew &&
@@ -52,7 +53,7 @@ export default function Album() {
                             </div>
                         </div>
                     }
-                    {/* <AddNewAlbum onAddNewAlbum={onAddNewAlbum} /> */}
+                    <AddNewAlbum onAddNewAlbum={onAddNewAlbum} />
                 </section>
             </main>
             <footer className={style.albumFooter}>
