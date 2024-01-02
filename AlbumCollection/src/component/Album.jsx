@@ -34,7 +34,7 @@ export default function Album() {
     return (
         <React.Fragment>
             <header>
-                <h1 className={`display-1 text-center py-5 ${style.albumH1}`}> <img src="https://cdn.onlinewebfonts.com/svg/img_296255.png" width={'100px'} alt="..." /> Lorem Ipsum Album </h1>
+                <h1 className={`display-1 text-center py-5 ${style.albumH1}`}> <img src="https://cdn.onlinewebfonts.com/svg/img_296255.png" width={'100px'} alt="..." />Album Collector </h1>
             </header>
             <main className={style.albumMain}>
                 <section className={style.albumSection}>
@@ -57,7 +57,7 @@ export default function Album() {
                 </section>
             </main>
             <footer className={style.albumFooter}>
-                <p>All trademarks are properties of their respective owners. 2023-2023 © Lorem Ipsum Album™ Ltd. All rights reserved.</p>
+                <p>All trademarks are properties of their respective owners. 2023-2023 © Album Collector™ Ltd. All rights reserved.</p>
             </footer>
         </React.Fragment>
 
