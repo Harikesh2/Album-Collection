@@ -1,13 +1,14 @@
-import React,{useRef} from "react";
+import React from "react";
 import { useNavigate } from "react-router-dom";
 import { tostify } from "../Tools/tostify";
 import { addHabit } from "../Redux/Reducer/HabitReducer";
 import { userSelector } from "../Redux/Selector";
 import { useDispatch, useSelector } from "react-redux";
 import css from '../CSS/AddHabit.module.css'
+import { useRef } from "react";
 
+export default function AddHabit() {
 
-function AddHabit(){
     const habitNameRef = useRef();
 
     const dispatch = useDispatch();
@@ -41,7 +42,4 @@ function AddHabit(){
             </div>
         </div>
     )
-
 }
-
-export default AddHabit();

@@ -7,7 +7,7 @@ import SignIn from "./Component/SignIn";
 import DailyHabitComponent from './Component/Daily/DailyHabitComponent'
 import WeeklyHabitComponent from "./Component/Weekly/WeeklyHabitComponent";
 import { ToastContainer } from "react-toastify";
-import 'react-toastify/dist/react-toastify';
+import 'react-toastify/dist/ReactToastify.css'
 
 function App() {
   const BrowserRouter = createBrowserRouter([
