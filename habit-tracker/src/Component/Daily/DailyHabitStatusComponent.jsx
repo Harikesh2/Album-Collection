@@ -10,7 +10,7 @@ import { collection, onSnapshot, query, where } from "firebase/firestore";
 import { db } from "../../Tools/Firebase";
 
 
-function DailyHabitStatusComponent(){
+function DailyHabitStatusComponent(props){
     const dispatch = useDispatch();
 
     const [currentDay, setCurrentDay] = useState(null);

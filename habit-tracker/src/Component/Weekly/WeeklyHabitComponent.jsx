@@ -2,6 +2,7 @@ import React from "react";
 import { useSelector } from "react-redux";
 import WeeklyHabitStatusComponent from './WeeklyHabitStatusComponent';
 import css from '../../CSS/WeeklyHabit.module.css'
+import { habitsSelector } from "../../Redux/Selector";
 
 function WeeklyHabitComponent(){
     const HABITS = useSelector(habitsSelector);
