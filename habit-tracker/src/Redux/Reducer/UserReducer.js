@@ -1,6 +1,8 @@
 import { tostify } from '../../Tools/tostify';
 import {createAsyncThunk, createSlice} from '@reduxjs/toolkit';
 import { getAuth,createUserWithEmailAndPassword,signInWithEmailAndPassword,signOut } from 'firebase/auth';
+
+
 const initialState = {
     userUID: localStorage.getItem("userUID") ? localStorage.getItem("userUID") : null,
 }
@@ -16,6 +18,7 @@ export const signUp = createAsyncThunk("userReducer/signUp", async (payload, thu
 
         localStorage.setItem("email", email);
         localStorage.setItem("password", password);
+       
 
         tostify("success", "SignUp Successful 🥳")
 

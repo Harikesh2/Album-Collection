@@ -4,7 +4,7 @@ import WeeklyHabitStatusComponent from './WeeklyHabitStatusComponent';
 import css from '../../CSS/WeeklyHabit.module.css'
 import { habitsSelector } from "../../Redux/Selector";
 
-function WeeklyHabitComponent(){
+export default function WeeklyHabitComponent(){
     const HABITS = useSelector(habitsSelector);
 
 
@@ -25,4 +25,3 @@ function WeeklyHabitComponent(){
 
 }
 
-export default WeeklyHabitComponent();

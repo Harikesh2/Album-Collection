@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import css from '../CSS/SignIn.module.css'
 import { useState } from "react";
 
-function SignIn(){
+export default function SignIn(){
 
     const [email, setEmail] = useState(localStorage.getItem("email") || "");
     const [password, setPassword] = useState(localStorage.getItem("password") || "");
@@ -44,4 +44,4 @@ function SignIn(){
 
 }
 
-export default SignIn();
+

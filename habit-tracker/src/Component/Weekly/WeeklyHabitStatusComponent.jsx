@@ -9,7 +9,7 @@ import { deleteHabit, habitsAction, addCurrentDay, updateHabitStatus } from "../
 import { tostify } from "../../Tools/tostify";
 
 
-function WeeklyHabitStatusComponent(props){
+export default function WeeklyHabitStatusComponent(props){
     const dispatch = useDispatch();
 
     const [currentWeek, setCurrentWeek] = useState(null);
@@ -162,4 +162,3 @@ function WeeklyHabitStatusComponent(props){
     </>)
 }
 
-export default WeeklyHabitStatusComponent();

@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 import { habitsSelector } from "../../Redux/Selector";
 import DailyHabitStatusComponent from "../Daily/DailyHabitStatusComponent";
 
-function DailyHabitComponent(){
+export default function DailyHabitComponent(){
     
     const HABITS = useSelector(habitsSelector)
 
@@ -13,4 +13,3 @@ function DailyHabitComponent(){
 
 }
 
-export default DailyHabitComponent();

@@ -7,7 +7,7 @@ import { logOut } from "../Redux/Reducer/UserReducer";
 import { useState } from "react";
 
 
-function Navbar(){
+export default function Navbar(){
 
     const [menu, setMenu] = useState(false);
     const [pageName, setPageName] = useState("Daily View");
@@ -85,4 +85,3 @@ function Navbar(){
 
 }
 
-export default Navbar();

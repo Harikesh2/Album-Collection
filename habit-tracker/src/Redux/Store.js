@@ -1,9 +1,12 @@
 import {configureStore} from "@reduxjs/toolkit"
-import { useReducer } from "react"
+import { userReducer } from "./Reducer/UserReducer";
+import { habitsReducer } from "./Reducer/HabitReducer";
 
 
 const store = configureStore({
     reducer:{
+        userReducer,
+        habitsReducer,
 
     }
 

@@ -2,12 +2,12 @@ import React,{useEffect} from "react";
 import { useDispatch,useSelector } from "react-redux";
 import { Outlet } from "react-router-dom";
 import { db } from "../Tools/Firebase";
-import { habitsSelector,userSelector } from "../Redux/Selector";
+import  {userSelector}  from "../Redux/Selector";
 import { habitsAction } from "../Redux/Reducer/HabitReducer";
 import { onSnapshot,collection } from "firebase/firestore";
 
 
-function AllHabit(){
+export default function Habit() {
 
     const userUID = useSelector(userSelector);
     const dispatch = useDispatch();
@@ -49,14 +49,10 @@ function AllHabit(){
     }, [userUID]);
 
 
-    return (
-    <>
+    return (<>
         < div className="habitsContainer" >
             <Outlet />
         </div>
     </>
     )
-
 }
-
-export default AllHabit();

@@ -7,7 +7,8 @@ import { tostify } from "../Tools/tostify";
 import css from '../CSS/SignUp.module.css'
 
 
-function SignUp(){
+export default function SignUp() {
+
     const [email, setEmail] = useState(localStorage.getItem("email") ? localStorage.getItem("email") : "");
     const [password, setPassword] = useState();
     const [confirmPassword, setConfirmPassword] = useState();
@@ -52,6 +53,4 @@ function SignUp(){
             </div>
         </div>
     )
-
 }
-export default SignUp();
